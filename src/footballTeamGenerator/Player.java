@@ -109,7 +109,7 @@ public class Player {
     }
 
     private void setOverallSkill() {
-        double rating = Math.ceil((this.getDribble() + this.getEndurance() + this.getPassing() + this.getShooting() + this.getSprint()) / 5);
+        double rating = Math.round((this.getDribble() + this.getEndurance() + this.getPassing() + this.getShooting() + this.getSprint()) / 5);
         this.overallSkill = (int) rating;
     }
 }
